@@ -28,10 +28,13 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="container_search">
-                <i class="fas fa-map-marker-alt"></i>
+                <div class="container_search_icone">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                
                 <label for="site-search"></label>
-                <input type="search" id="site-search" name="q" aria-label="Rechercher une localisation">
-                <button>Rechercher</button>
+                <input type="search" id="site-search" aria-label="Rechercher une localisation" placeholder="Marseille,France">
+                <button class="search_button"><span id="search_text">Rechercher</span></button>
             </div>
             <div class="container_filters">
                 <span>Filtres</span>

@@ -1,26 +1,13 @@
 html {
     font-family: 'Raleway', sans-serif;
 }
-
 body {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 0px;
 }
 
-h1 {
-    letter-spacing: -1px; 
-    margin-bottom: 15px;
-    margin-top: 45px;
-}
-
-h1 + p {
-    margin-top: 0px;
-}
-
-h2 {
-    
-}
+/* CSS header - Logo + Barre naviguation */
 
 .wrapper {
     display: flex;
@@ -64,4 +51,68 @@ header nav {
 #subscribe {
     color: #0065FC;
     font-weight: bold;
+}
+
+
+h1 {
+    letter-spacing: -1px; 
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+
+h1 + p {
+    margin-top: 0px;
+}
+
+/* CSS search bar */
+
+.container_search {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    height: 50px;
+    border-radius: 45px;
+    border: solid #F2F2F2 2px ;
+}
+.container_search_icone {
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    background-color: #F2F2F2;
+}
+
+.fa-map-marker-alt {
+    margin-top: 16px;
+    margin-left: 19px;
+    height: 18px;
+}
+
+.search_button {
+    width: 132px;
+    border-radius: 0px 15px 15px 0px;
+    border-style: none;
+    color: white;
+    background-color: #0065FC;
+    cursor: pointer;
+}
+.search_button:active {
+    background-color: #0065FC;
+    transform: translateY(2px);
+  }
+
+#search_text {
+    font-size: 15px;
+    width: 100px;
+}
+
+input {
+    border-style: none;
+    width: 234px;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder {
+    font-weight: bold;
+    color: black;
+    padding-left: 17px;
 }
