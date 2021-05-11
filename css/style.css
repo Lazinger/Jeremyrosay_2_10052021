@@ -30,7 +30,7 @@ header nav {
 
 #naviguation li {
     display: inline;
-    margin-left: 70px;
+    margin-left: 67px;
 }
 #naviguation a {
     padding-left: 10px;
@@ -62,6 +62,7 @@ h1 {
 
 h1 + p {
     margin-top: 0px;
+    margin-bottom: 23px;
 }
 
 /* CSS search bar */
@@ -107,6 +108,9 @@ h1 + p {
 input {
     border-style: none;
     width: 234px;
+    padding-left: 15px;
+    font-weight: bold;
+    color: black;
 }
 input:focus {
     outline: none;
@@ -114,5 +118,4 @@ input:focus {
 input::placeholder {
     font-weight: bold;
     color: black;
-    padding-left: 17px;
 }
