@@ -119,3 +119,14 @@ input::placeholder {
     font-weight: bold;
     color: black;
 }
+
+/* CSS Zone Filtres */
+
+.container_filters {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9px;
+    margin-top: 31px;
+    margin-bottom: 35px;
+    width: 938px;
+}
