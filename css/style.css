@@ -7,6 +7,8 @@ body {
     margin-top: 0px;
 }
 
+
+
 /* CSS header - Logo + Barre naviguation */
 
 .wrapper {
@@ -79,12 +81,9 @@ h1 + p {
     border-radius: 15px 0px 0px 15px;
     width: 50px;
     background-color: #F2F2F2;
-}
-
-.fa-map-marker-alt {
-    margin-top: 16px;
-    margin-left: 19px;
-    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search_button {
@@ -125,8 +124,56 @@ input::placeholder {
 .container_filters {
     display: flex;
     justify-content: space-between;
-    margin-left: 9px;
-    margin-top: 31px;
-    margin-bottom: 35px;
-    width: 938px;
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    width: 940px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.container_filter {
+    display: flex;
+    align-items: center;
+    border: solid #F2F2F2 2px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: transform 250ms;
+}
+
+.container_filter:hover {
+    color: #0065FC;
+    transform: translateY(-10px);
+}
+
+.container_filter_icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+}
+
+.container_filter_text {
+    margin-left: 13px;
+    margin-right: 21px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.decoration_filter_text {
+    font-weight: bold;
+    color: black;
+}
+
+.no-border {
+    border-style: none;
+}
+.no-animation {
+    transition: none;
+}
+.no-animation:hover {
+    transform: none;
 }
