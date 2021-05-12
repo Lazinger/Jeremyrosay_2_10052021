@@ -2,8 +2,9 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 body {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1920px;
     margin-top: 0px;
 }
 
@@ -200,3 +201,67 @@ input::placeholder {
     margin-left: 15px;
 }
 
+/* CSS HEBERGEMENT */
+
+.container_section_host {
+    display: flex;
+    justify-content: space-between;
+    height: 625px;
+    
+}
+.container_host_left {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 37px;
+    width: 880px;
+ 
+}
+
+.container_host_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container_card {
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    height: 200px;
+}
+
+.card_img_sizing {
+    height: 115px;
+    width: 236px;
+    border-radius: 30px 30px 0px 0px;
+    margin-bottom: 10px;
+
+}
+
+.decoration_host_text {
+    padding-left: 11px;
+}
+
+.decoration_host_text h3 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    height: 12px;
+    font-weight: bold;
+}
+.decoration_host_text p {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    height: 10px;
+}
+
+.decoration_host_star {
+
+    color: blue;
+    margin-bottom: 12px;
+}
