@@ -124,7 +124,6 @@ input::placeholder {
 .container_filters {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
     padding-top: 30px;
     padding-bottom: 35px;
     width: 940px;
@@ -177,3 +176,27 @@ input::placeholder {
 .no-animation:hover {
     transform: none;
 }
+
+/* CSS Zone Information */
+
+.container_information {
+    display: flex;
+    align-items: center;
+}
+
+.container_information_icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #F2F2F2 2px;
+    border-radius: 25px 25px 25px 25px;
+    width: 25px;
+    height: 25px;
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.decoration_information_text {
+    margin-left: 15px;
+}
+
