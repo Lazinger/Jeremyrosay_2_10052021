@@ -2,10 +2,19 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 body {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    width: 1340px;
+ 
+    margin: 0;
+    
+}
+header {
+    width: 100%;
+    margin: auto;
+    max-width: 1340px;
+}
+main {
+    width: 100%;
+    margin: auto;
+    max-width: 1340px;
 }
 
 .bold {
@@ -16,13 +25,23 @@ body {
     color: #d9d9d9;
 }
 
-
+li {
+    list-style: none;
+}
+h5 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0px;
+}
 
 /* CSS header - Logo + Barre naviguation */
 
-.wrapper {
+
+
+.container_header {
     display: flex;
     justify-content: space-between;
+    width: 1340px;
 }
 header img {
     display: inline-block;
@@ -35,7 +54,6 @@ header nav {
 #naviguation {
     margin: 0;
     padding-top: 50px;
-    list-style: none;
     text-align: right;
 }
 
@@ -216,6 +234,7 @@ input::placeholder {
 .container_section_host {
     display: flex;
     margin-top: 37px;
+    width: 1340px;
 }
 
 /* PARTIE GAUCHE */
@@ -319,13 +338,14 @@ input::placeholder {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 5px;
+    
 }
 
 .card_image_sizing_right {
     height: 134px;
     width: 127px;
     border-radius: 30px 0px 0px 30px;
+    padding-left: 5px;
 }
 
 .decoration_host_text_right {
@@ -351,7 +371,7 @@ input::placeholder {
     color: #0065FC; 
 }
 
-.test {
+.decoration_host_content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -363,6 +383,7 @@ input::placeholder {
 
 .container_activities {
     padding-top: 30px;
+    width: 1340px;
 }
 .container_activities_cards {
     display: grid;
@@ -386,6 +407,11 @@ input::placeholder {
     height: 100%;
     object-fit: none;
     border-radius: 30px 30px 0px 0px;
+}
+.decoration_activities_card_text {
+    font-weight: bold;
+    margin-left: 19px;
+
 }
 .img_one {
     grid-column: 1 / 2;
@@ -412,8 +438,26 @@ input::placeholder {
     grid-row: 3 / 6;
 }
 
+/* FOOTER */
 
-.decoration_activities_text {
-    font-weight: bold;
-    margin-left: 19px;
+.footer_background {
+    background-color: #F2F2F2;
+}
+.container_footer_menu {
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    max-width: 1340px;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer_menu_content {
+    padding-right: 200px;
+    padding-top: 49px;
+}
+ul {
+    padding-left: 0px;
+}
+.footer_menu li {
+    margin-bottom: 10px;
 }
