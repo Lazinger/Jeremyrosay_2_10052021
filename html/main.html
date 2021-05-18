@@ -14,29 +14,31 @@
 		<title>Reservia</title>
 	</head>
 	<body>
-		<!-- HEADER + MENU -->
-		<header>
-			<div class="container_header">
-				<img src="../img/logo/Reservia.svg" alt="Logo site web Reservia" />
-				<nav>
-					<ul id="naviguation">
-						<li class=""><a href="#hebergement">Hébergements</a></li>
-						<li class=""><a href="#activities">Activités</a></li>
-						<li class="">
-							<a href=""><span id="subscribe">S'inscrire</span></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<!-- FIN HEADER -->
-		<!-- SECTION RECHERCHE + FILTRES -->
-		<main>
+		<!-- HEADER LOGO + MENU -->
+		<main class="container">
+			<header class="flex">
+				<div class="header-logo">
+					<img src="../img/logo/Reservia.svg" alt="Logo site web Reservia" />
+				</div>
+					<nav class="flex">
+						<ul class="flex">
+							<li class=""><a href="#hebergement">Hébergements</a></li>
+							<li class=""><a href="#activities">Activités</a></li>
+							<li class="">
+								<a href=""><span id="subscribe">S'inscrire</span></a>
+							</li>
+						</ul>
+					</nav>
+			</header>
+			<!-- FIN HEADER -->
+			
+			<!-- SECTION RECHERCHE + FILTRES -->
+
 			<section>
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
-				<div class="container_search">
-					<div class="container_search_icone">
+				<div class="container_search flex">
+					<div class="container_search_icone flex">
 						<i class="fas fa-map-marker-alt"></i>
 					</div>
 					<!-- RECHERCHE -->
@@ -53,47 +55,39 @@
 					</button>
 				</div>
 				<!-- FILTRES -->
-				<div class="container_filters">
-					<div class="container_filter no-border no-animation">
-						<span class="decoration_filter_text">Filtres</span>
+				<div class="filters flex">
+					<div class="filter flex no-border no-animation">
+						<span class="filter-text">Filtres</span>
 					</div>
-
-					<div class="container_filter">
-						<div class="container_filter_icone">
+					
+					<div class="filter flex">
+						<div class="filter-icone flex">
 							<i class="fas fa-money-bill-wave"></i>
 						</div>
-						<div class="container_filter_text">
-							<span class="decoration_filter_text">Economique</span>
-						</div>
+						<div class="filter-text">Economique</div>
 					</div>
-					<div class="container_filter">
-						<div class="container_filter_icone">
+					<div class="filter flex">
+						<div class="filter-icone flex">
 							<i class="fas fa-child"></i>
 						</div>
-						<div class="container_filter_text">
-							<span class="decoration_filter_text">Familial</span>
-						</div>
+						<div class="filter-text">Familial</div>
 					</div>
-					<div class="container_filter">
-						<div class="container_filter_icone">
+					<div class="filter flex">
+						<div class="filter-icone flex">
 							<i class="fas fa-heart"></i>
 						</div>
-						<div class="container_filter_text">
-							<span class="decoration_filter_text">Romantique</span>
-						</div>
+						<div class="filter-text">Romantique</div>
 					</div>
-					<div class="container_filter">
-						<div class="container_filter_icone">
+					<div class="filter flex">
+						<div class="filter-icone flex">
 							<i class="fas fa-dog"></i>
 						</div>
-						<div class="container_filter_text">
-							<span class="decoration_filter_text">Animaux autorisés</span>
-						</div>
+						<div class="filter-text">Animaux autorisés</div>
 					</div>
 				</div>
 				<!-- ZONE INFORMATION -->
-				<div class="container_information">
-					<div class="container_information_icone">
+				<div class="container_information flex">
+					<div class="container_information_icone flex">
 						<i class="fas fa-info"></i>
 					</div>
 					<div>
@@ -106,12 +100,12 @@
 			<!-- SECTION HEBERGEMENT GAUCHE ET DROITE -->
 
 			<!-- SECTION GAUCHE-->
-			<section id="hebergement" class="container_section_host">
+			<section id="hebergement" class="container_section_host flex">
 				<div class="container_host_left">
 					<div>
 						<h2>Hébergements à Marseille</h2>
 					</div>
-					<div class="container_host_cards_left">
+					<div class="container_host_cards_left flex">
 						<article class="container_card_left">
 							<img
 								class="card_img_sizing_left"
@@ -119,7 +113,7 @@
 								alt="Image hebergement"
 							/>
 							<div class="test_b">
-								<div class="decoration_host_text_left">
+								<div class="decoration_host_text_left flex">
 									<h3>Auberge la Cannebière</h3>
 									<p>Nuit à partir de 25€</p>
 								</div>
@@ -139,7 +133,7 @@
 								alt="Image hebergement"
 							/>
 							<div class="test_b">
-								<div class="decoration_host_text_left">
+								<div class="decoration_host_text_left flex">
 									<h3>Hôtel du port</h3>
 									<p>Nuit à partir de 52€</p>
 								</div>
@@ -159,7 +153,7 @@
 								alt="Image hebergement"
 							/>
 							<div class="test_b">
-								<div class="decoration_host_text_left">
+								<div class="decoration_host_text_left flex">
 									<h3>Hôtel les mouettes</h3>
 									<p>Nuit à partir de 76€</p>
 								</div>
@@ -179,7 +173,7 @@
 								alt="Image hebergement"
 							/>
 							<div class="test_b">
-								<div class="decoration_host_text_left">
+								<div class="decoration_host_text_left flex">
 									<h3>Hôtel de la mer</h3>
 									<p>Nuit à partir de 46€</p>
 								</div>
@@ -199,7 +193,7 @@
 								alt="Image hebergement"
 							/>
 							<div class="test_b">
-								<div class="decoration_host_text_left">
+								<div class="decoration_host_text_left flex">
 									<h3>Auberge le panier</h3>
 									<p>Nuit à partir de 23€</p>
 								</div>
@@ -219,7 +213,7 @@
 								alt="Image hebergement"
 							/>
 							<div class="test_b">
-								<div class="decoration_host_text_left">
+								<div class="decoration_host_text_left flex">
 									<h3>Hôtel chez Amina</h3>
 									<p>Nuit à partir de 96€</p>
 								</div>
@@ -317,43 +311,65 @@
 					<h2>Activités à Marseille</h2>
 				</div>
 				<div class="container_activities_cards">
-                    <div class="img_one">
-                        <div class="activities_card">
-                            <img src="../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                            <p class="decoration_activities_card_text">Vieux port</p>
-                        </div>
-                    </div>
-                    <div class="img_two">
-                        <div class="activities_card">
-                            <img src="../img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                            <p class="decoration_activities_card_text">Fort de Pomègues</p>
-                        </div>
-                    </div>
-                    <div class="img_three">
-                        <div class="activities_card">
-                            <img src="../img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                            <p class="decoration_activities_card_text">Iles du Frioul</p>
-                        </div>
-                    </div>
-                    <div class="img_four">
-                        <div class="activities_card">
-                            <img src="../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                            <p class="decoration_activities_card_text">Parc National des Calanques</p>
-                        </div>
-                    </div>
-                    <div class="img_five">
-                        <div class="activities_card">
-                            <img src="../img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                            <p class="decoration_activities_card_text">Notre-Dame-de-la-Garde</p>
-                        </div>
-                    </div>
-                    <div class="img_six">
-                        <div class="activities_card">
-                            <img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                            <p class="decoration_activities_card_text">Parc Longchamps</p>
-                        </div>
-                    </div>
-                </div>
+					<div class="img_one">
+						<div class="activities_card">
+							<img
+								src="../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+								alt=""
+							/>
+							<p class="decoration_activities_card_text">Vieux port</p>
+						</div>
+					</div>
+					<div class="img_two">
+						<div class="activities_card">
+							<img
+								src="../img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+								alt=""
+							/>
+							<p class="decoration_activities_card_text">Fort de Pomègues</p>
+						</div>
+					</div>
+					<div class="img_three">
+						<div class="activities_card">
+							<img
+								src="../img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+								alt=""
+							/>
+							<p class="decoration_activities_card_text">Iles du Frioul</p>
+						</div>
+					</div>
+					<div class="img_four">
+						<div class="activities_card">
+							<img
+								src="../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+								alt=""
+							/>
+							<p class="decoration_activities_card_text">
+								Parc National des Calanques
+							</p>
+						</div>
+					</div>
+					<div class="img_five">
+						<div class="activities_card">
+							<img
+								src="../img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+								alt=""
+							/>
+							<p class="decoration_activities_card_text">
+								Notre-Dame-de-la-Garde
+							</p>
+						</div>
+					</div>
+					<div class="img_six">
+						<div class="activities_card">
+							<img
+								src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+								alt=""
+							/>
+							<p class="decoration_activities_card_text">Parc Longchamps</p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 		<!-- FOOTER -->

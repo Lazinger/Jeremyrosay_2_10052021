@@ -5,15 +5,14 @@ body {
  
     margin: 0;  
 }
-header {
-    width: 100%;
-    margin: auto;
-    max-width: 1340px;
+.container {
+    width: 1340px;
+}
+.flex {
+    display: flex;
 }
 main {
-    width: 100%;
     margin: auto;
-    max-width: 1340px;
 }
 .bold {
     font-weight: bold; 
@@ -30,70 +29,51 @@ h5 {
     margin-top: 0px;
 }
 
+
 /* CSS header - Logo + Barre naviguation */
 
-
-
-.container_header {
-    display: flex;
+header {
     justify-content: space-between;
-    width: 1340px;
+
 }
 header img {
-    display: inline-block;
     padding-top: 50px;
 }
-header nav {
-    display: inline-block;
-}
 
-#naviguation {
-    margin: 0;
+header nav li {
     padding-top: 50px;
-    text-align: right;
-}
-
-#naviguation li {
-    display: inline;
     margin-left: 67px;
 }
-#naviguation a {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 48px;
+header nav li a {
+    padding: 64px 40px 0;
+    
     text-decoration: none;
 }
-
-#naviguation a:visited {
+header nav li a:visited {
     color: black;
 }
-
-#naviguation a:hover { 
+header nav li a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-
 #subscribe {
     color: #0065FC;
     font-weight: bold;
 }
 
 
+/* CSS search bar */
+
 h1 {
     letter-spacing: -1px; 
     margin-bottom: 15px;
     margin-top: 45px;
 }
-
 h1 + p {
     margin-top: 0px;
     margin-bottom: 23px;
 }
-
-/* CSS search bar */
-
 .container_search {
-    display: flex;
     justify-content: space-between;
     width: 420px;
     height: 50px;
@@ -101,14 +81,12 @@ h1 + p {
     border: solid #F2F2F2 2px ;
 }
 .container_search_icone {
+    justify-content: center;
+    align-items: center;
     border-radius: 15px 0px 0px 15px;
     width: 50px;
     background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
 .search_button {
     width: 132px;
     border-radius: 0px 15px 15px 0px;
@@ -126,7 +104,6 @@ h1 + p {
     font-size: 15px;
     width: 100px;
 }
-
 input {
     border-style: none;
     width: 234px;
@@ -144,8 +121,7 @@ input::placeholder {
 
 /* CSS Zone Filtres */
 
-.container_filters {
-    display: flex;
+.filters {
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 35px;
@@ -153,9 +129,7 @@ input::placeholder {
     height: 50px;
     margin-top: 15px;
 }
-
-.container_filter {
-    display: flex;
+.filter {
     align-items: center;
     border: solid #F2F2F2 2px;
     border-radius: 45px;
@@ -163,13 +137,11 @@ input::placeholder {
     transition: transform 250ms;
 }
 
-.container_filter:hover {
+.filter:hover {
     color: #0065FC;
     transform: translateY(-10px);
 }
-
-.container_filter_icone {
-    display: flex;
+.filter-icone {
     justify-content: center;
     align-items: center;
     border-radius: 25px 25px 25px 25px;
@@ -177,19 +149,11 @@ input::placeholder {
     height: 50px;
     background-color: #DEEBFF;
 }
-
-.container_filter_text {
-    margin-left: 13px;
-    margin-right: 21px;
-    margin-top: 17px;
-    margin-bottom: 17px;
-}
-
-.decoration_filter_text {
+.filter-text {
+    padding: 15px 15px;
     font-weight: bold;
     color: black;
 }
-
 .no-border {
     border-style: none;
 }
@@ -203,13 +167,13 @@ input::placeholder {
 /* CSS Zone Information */
 
 .container_information {
-    display: flex;
+
     align-items: center;
     justify-content: spa;
 }
 
 .container_information_icone {
-    display: flex;
+
     justify-content: center;
     align-items: center;
     border: solid #F2F2F2 2px;
@@ -228,7 +192,7 @@ input::placeholder {
 
 
 .container_section_host {
-    display: flex;
+
     margin-top: 37px;
     width: 1340px;
 }
@@ -247,7 +211,7 @@ input::placeholder {
 }
 
 .container_host_cards_left {
-    display: flex;
+ 
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -389,7 +353,6 @@ input::placeholder {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border-radius: 30px;
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
@@ -402,7 +365,6 @@ input::placeholder {
 .decoration_activities_card_text {
     font-weight: bold;
     margin-left: 19px;
-
 }
 .img_one {
     grid-column: 1 / 2;
@@ -452,4 +414,7 @@ ul {
 }
 .footer_menu li {
     margin-bottom: 10px;
+}
+
+@media only screen (max-width: 375px) {
 }
