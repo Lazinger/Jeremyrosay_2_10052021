@@ -3,7 +3,6 @@ html {
     background-color: grey;
 }
 body {
- 
     margin: 0; 
     padding: 0;
 }
@@ -33,7 +32,6 @@ h5 {
 a {
     text-decoration: none;
 }
-
 
 /* CSS header - Logo + Barre naviguation */
 
@@ -80,9 +78,9 @@ h1 + p {
 }
 .container_search {
     justify-content: space-between;
-    width: 420px;
+    width: 416px;
     height: 50px;
-    border-radius: 45px;
+    border-radius: 15px 15px 15px 15px;
     border: solid #F2F2F2 2px ;
 }
 .container_search_icone {
@@ -99,15 +97,19 @@ h1 + p {
     color: white;
     background-color: #0065FC;
     cursor: pointer;
+    padding: 0;
 }
 .search_button:active {
     background-color: #0065FC;
     transform: translateY(2px);
   }
-
 #search_text {
     font-size: 15px;
     width: 100px;
+}
+#site-search {
+    width: 234px;
+    padding: 0;
 }
 input {
     border-style: none;
@@ -140,7 +142,6 @@ input::placeholder {
     cursor: pointer;
     transition: transform 250ms;
 }
-
 .filter:hover {
     color: #0065FC;
     transform: translateY(-10px);
@@ -174,7 +175,6 @@ input::placeholder {
     align-items: center;
     margin-bottom: 15px;
 }
-
 .information-icone {
     justify-content: center;
     align-items: center;
@@ -185,7 +185,6 @@ input::placeholder {
     color: #0065FC;
     font-size: 12px;
 }
-
 .information-text {
     margin-left: 15px;
 }
@@ -202,15 +201,12 @@ input::placeholder {
     border-radius: 30px;
     padding: 0px 30px 50px 30px;
     margin-right: 30px;
-    width: 70%;
-    
+    width: 70%;  
 }
-
 .container_cards_left {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .card_left{
     background-color: white;
     border-radius: 30px;
@@ -222,7 +218,6 @@ input::placeholder {
     border-radius: 35px;
     height: 200px;
 }
-
 .card_left-img {
     height: 115px;
     width: 236px;
@@ -239,7 +234,6 @@ input::placeholder {
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .card-text h3 {
     margin-top: 3px;
     margin-bottom: 12px;
@@ -250,7 +244,6 @@ input::placeholder {
     margin-top: 3px;
     margin-bottom: 5px;
 }
-
 .card_star {
     color: #0065FC;
 }
@@ -266,30 +259,28 @@ input::placeholder {
     color: black;
 }
 
-
 /* PARTIE DROITE */
-
-.container_host_cards_right {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-}
 .container_host-right {
     background-color: #F2F2F2;
     border-radius: 30px;
     padding-left: 30px;
-    padding-right: 30px;
-    
+    padding-right: 30px;  
 }
-
-.container_host_right h2 {
-    display: flex;
+.host_right-text {
     justify-content: space-between;
+    align-items: baseline;
+    padding-top: 25px;
 }
-
-.container_card_right {
+.host_right-text i {
+    font-size: 1.5rem;
+    margin-bottom: ;
+}
+.container_cards_right {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card_right {
     display: flex;
     background-color: white;
     border-radius: 30px;
@@ -300,45 +291,12 @@ input::placeholder {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
-.card_image_sizing_right {
+.card_right-img {
     height: 134px;
     width: 127px;
     border-radius: 30px 0px 0px 30px;
     padding-left: 5px;
 }
-
-.decoration_host_text_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-right: 5px;
-}
-
-
-.decoration_host_text_right p {
-    margin-top: 14px;
-    margin-bottom: 12px;
-}
-
-.decoration_host_text_right h3 {
-    margin-top: 14px;
-    margin-bottom: 0px;
-}
-
-
-.decoration_host_star_right {
-    color: #0065FC; 
-}
-
-.decoration_host_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 21px;
-    padding-bottom: 6px;
-}
-
 /* CSS ACTIVITES */
 
 .container_activities {
@@ -352,7 +310,6 @@ input::placeholder {
     column-gap: 40px;
     row-gap: 40px;
 }
-
 .activities_card {
     height: 100%;
     display: flex;
@@ -362,8 +319,7 @@ input::placeholder {
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
     background-color: white;
 }
-.activities_card img {
- 
+.activities_card img { 
     height: 100%;
     width: 100%;
     object-fit: none;
@@ -397,7 +353,6 @@ input::placeholder {
     grid-column: 4 / 5;
     grid-row: 3 / 6;
 }
-
 /* FOOTER */
 
 footer {
