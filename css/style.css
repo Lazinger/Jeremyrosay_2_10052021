@@ -1,6 +1,6 @@
 html {
 	font-family: "Raleway", sans-serif;
-	background-color: grey;
+	/*background-color: grey;*/
 }
 body {
 	margin: 0;
@@ -9,8 +9,13 @@ body {
 .container {
 	width: 1340px;
 }
-.flex {
+.flex_row {
 	display: flex;
+    flex-direction: row;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
 }
 main {
 	margin: auto;
@@ -39,6 +44,7 @@ a {
 
 header {
 	justify-content: space-between;
+    margin: auto;
 }
 header img {
 	padding-top: 50px;
@@ -295,58 +301,16 @@ input::placeholder {
 }
 /* CSS ACTIVITES */
 
-.container_activities {
-	padding-top: 30px;
+#activities {
+    width: 100%;
 }
 .container_activities_cards {
-	display: grid;
-	grid-template-columns: repeat(4, 305px);
-	grid-template-rows: repeat(5, 69px);
-	column-gap: 40px;
-	row-gap: 40px;
+    width: 100%;
+    height: 445px;
 }
-.activities_card {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	border-radius: 30px;
-	box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-	background-color: white;
-}
-.activities_card img {
-	height: 100%;
-	width: 100%;
-	object-fit: none;
-	border-radius: 30px 30px 0px 0px;
-}
-.decoration_activities_card_text {
-	font-weight: bold;
-	margin-left: 19px;
-}
-.img_one {
-	grid-column: 1 / 2;
-	grid-row: 1 / 6;
-}
-.img_two {
-	grid-column: 2 / 3;
-	grid-row: 1 / 4;
-}
-.img_three {
-	grid-column: 2 / 3;
-	grid-row: 4 / 6;
-}
-.img_four {
-	grid-column: 3 / 4;
-	grid-row: 1 / 6;
-}
-.img_five {
-	grid-column: 4 / 5;
-	grid-row: 1 / 3;
-}
-.img_six {
-	grid-column: 4 / 5;
-	grid-row: 3 / 6;
+.container_activities_cards img {
+    width: 100%;
+    height: 100%;
 }
 /* FOOTER */
 
