@@ -345,6 +345,10 @@ input::placeholder {
 #activities {
     width: 100%;
 }
+.activities_column {
+	display: flex;
+	justify-content: space-between;
+}
 .container_activities_cards {
     height: 445px;
 	width: 100%;
@@ -387,9 +391,8 @@ input::placeholder {
 .activities_text {
 	margin-left: 15px;
 	margin-top: 15px;
-	width: 100%;
-	height: 10%;
-	font-size: 0.9em;
+	margin-bottom: 15px;
+	font-weight: bold;
 }
 
 
