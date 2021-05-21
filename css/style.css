@@ -427,17 +427,3 @@ ul {
 
 @media screen and (max-width: 420px) {
 	
-	body {
-		max-width: 420px;
-	}
-	header {
-		width: 100%;
-		justify-content: none;
-	}
-	.container_hosts {
-		justify-content: none;
-	}
-	.container_host-right {
-		
-	}
-}
