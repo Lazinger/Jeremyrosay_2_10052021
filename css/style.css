@@ -225,6 +225,7 @@ input::placeholder {
 }
 
 .container_host_left {
+	height: 625px;
 	background-color: #f2f2f2;
 	border-radius: 30px;
 	padding: 30px 0px 30px 0px;
@@ -286,11 +287,11 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #f2f2f2;
 	border-radius: 30px;
 	width: 30%;
-	padding: 30px 0 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 .host_right-text {
@@ -334,13 +335,13 @@ input::placeholder {
 }
 /* CSS ACTIVITES */
 .img_large {
-	height: 390px;
+	height: 100%;
 }
 .img_medium {
-	height: 180px;
+	height: 100%;
 }
 .img_small {
-	height: 110px;
+	height: 100%;
 }
 #activities {
     width: 100%;
@@ -351,6 +352,7 @@ input::placeholder {
 }
 .container_activities_cards {
     height: 445px;
+	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;	
 }
@@ -360,30 +362,33 @@ input::placeholder {
 	border-radius: 25px 25px 0 0;
 	object-fit: cover;
 }
+.activities_column {
+	justify-content: space-between;
+	width: 300px;
+	height: 100%;
+}
 .container_card_large {
 	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	height: 100%;
-	width: 300px;
+	width: 100%;
 	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .container_card_medium {
 	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	height: 236px;
-	width: 300px;
+	width: 100%;
 	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 }
 .container_card_small {
 	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	height: 165px;
-	width: 300px;
+	width: 100%;
 	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 }
-.containers_card {
-	justify-content: space-between;
-}
+
 .activities_text {
 	margin-left: 15px;
 	margin-top: 15px;
@@ -430,16 +435,10 @@ ul {
 		width: 100%;
 		justify-content: none;
 	}
-	main {
-		
-	}
 	.container_hosts {
 		justify-content: none;
 	}
 	.container_host-right {
-		
-	}
-	.container_host_left {
 		
 	}
 }
