@@ -300,7 +300,6 @@ input::placeholder {
 }
 .host_right-text i {
 	font-size: 1.5rem;
-	margin-bottom: ;
 }
 .host_right-text h2 {
 	margin-top: 0px;
@@ -424,6 +423,3 @@ ul {
 .footer_menu li {
 	margin-bottom: 10px;
 }
-
-@media screen and (max-width: 420px) {
-	
