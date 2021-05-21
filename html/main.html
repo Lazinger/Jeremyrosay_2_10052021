@@ -16,25 +16,26 @@
 	<body>
 		<!-- HEADER LOGO + MENU -->
 
-		<header class="container flex_row">
-			<div class="header-logo">
-				<img src="../img/logo/Reservia.svg" alt="Logo site web Reservia" />
-			</div>
+		<header class="container">
+			<img
+				class="header-logo"
+				src="../img/logo/Reservia.svg"
+				alt="Logo site web Reservia"
+			/>
 			<nav class="flex_row">
 				<ul class="flex_row">
 					<li class=""><a href="#hebergement">Hébergements</a></li>
 					<li class=""><a href="#activities">Activités</a></li>
-					<li class="">
-						<a href=""><span id="subscribe">S'inscrire</span></a>
-					</li>
 				</ul>
+				<a class="subscribe" href=""><span id="subscribe">S'inscrire</span></a>
 			</nav>
 		</header>
+
 		<!-- FIN HEADER -->
 
 		<!-- SECTION RECHERCHE + FILTRES -->
 		<main class="container">
-			<section>
+			<section class="flex_column">
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 
@@ -99,11 +100,12 @@
 
 			<!-- SECTION GAUCHE-->
 			<section id="hebergement" class="container_hosts flex_row">
-				<div class="container_host-left">
+				<div class="container_host_left flex_column">
 					<div>
 						<h2>Hébergements à Marseille</h2>
 					</div>
-					<div class="container_cards_left flex_row">
+
+					<div class="row_number_one flex_row">
 						<article class="card_left">
 							<img
 								class="card_left-img"
@@ -164,6 +166,8 @@
 								</div>
 							</div>
 						</article>
+					</div>
+					<div class="row_number_two flex_row">
 						<article class="card_left">
 							<img
 								class="card_left-img"
@@ -225,7 +229,7 @@
 							</div>
 						</article>
 					</div>
-					<a class="afficherPlus bold" href="#">Afficher plus</a>
+					<a class="afficherPlus" href="#">Afficher plus</a>
 				</div>
 				<!-- SECTION DROITE -->
 				<div class="container_host-right">
@@ -233,8 +237,8 @@
 						<h2>Les plus populaires</h2>
 						<i class="fas fa-chart-line"></i>
 					</div>
-					<div class="container_cards_right flex_column">
-						<article class="card_right">
+					<div class="column_number_one">
+						<article class="card_right flex_row">
 							<img
 								class="card_right-img"
 								src="../img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -256,7 +260,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="card_right">
+						<article class="card_right flex_row">
 							<img
 								class="card_right-img"
 								src="../img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -278,7 +282,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="card_right">
+						<article class="card_right flex_row">
 							<img
 								class="card_right-img"
 								src="../img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -309,64 +313,81 @@
 				<div>
 					<h2>Activités à Marseille</h2>
 				</div>
-				<div class="container_activities_cards flex_row">
-
+				<div class="flex_row container_activities_cards">
 					<!-- COLUMN 1-->
-					<div class="flex_column">
-						<div>
-							<img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+					<div class="flex_column container_card_large">
+						<div class="img_large">
+							<img
+								src="../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+								alt="Vue sur le vieux port de Marseille"
+							/>
 						</div>
-						<div>
-							MON TEXTE 1
+						<div class="activities_text">
+							<h3>Vieux port</h3>
 						</div>
 					</div>
 
 					<!-- COLUMN 2-->
-					<div class="flex_column">
-						<div>
-							<div>
-								<img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+					<div class="flex_column containers_card">
+						<div class="container_card_medium">
+							<div class="img_medium">
+								<img
+									src="../img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+									alt="Le fort de Pomègues, batisse blanche"
+								/>
 							</div>
-							<div>
-								MON TEXTE 2
+							<div class="activities_text">
+								<h3>Fort de Pomègues</h3>
 							</div>
 						</div>
-						<div>
-							<div>
-								<img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+						<div class="container_card_small">
+							<div class="img_small">
+								<img
+									src="../img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+									alt="Vue sur la mer et les iles du frioul"
+								/>
 							</div>
-							<div>
-								MON TEXTE 3
+							<div class="activities_text">
+								<h3>Iles du Frioul</h3>
 							</div>
 						</div>
 					</div>
 
 					<!-- COLUMN 3-->
-					<div class="flex_column">
-						<div>
-							<img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+					<div class="flex_column container_card_large">
+						<div class="img_large">
+							<img
+								src="../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+								alt="Vue les calanques de Marseille, immense coline rocheuse et boisé"
+							/>
 						</div>
-						<div>
-							MON TEXTE 4
+						<div class="activities_text">
+							<h3>Parc National des Calanques</h3>
 						</div>
 					</div>
 
 					<!-- COLUMN 4-->
-					<div class="flex_column">
-						<div>
-							<div>
-								<img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+					<div class="flex_column containers_card">
+						<div class="flex_column container_card_small">
+							<div class="img_small">
+								<img
+									src="../img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+									alt="Immense statue d'or qui veille sur le peuple marseillais"
+								/>
 							</div>
-							<div>
-								MON TEXTE 2
+							<div class="activities_text">
+								<h3>Notre-Dame-de-la-Garde</h3>
 							</div>
 						</div>
-						<div>
-							<div>
-								<img src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+						<div class="flex_column container_card_medium">
+							<div class="img_medium">
+								<img
+									src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+									alt="Grande architecture blanche entouré de parc verdoyant"
+								/>
 							</div>
-							<div>
-								MON TEXTE 3
+							<div class="activities_text">
+								<h3>Parc Longchamp</h3>
 							</div>
 						</div>
 					</div>
