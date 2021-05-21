@@ -288,7 +288,7 @@ input::placeholder {
 	background-color: #f2f2f2;
 	border-radius: 30px;
 	width: 30%;
-	padding: 30px 0 0px 0px;
+	padding: 30px 0px 0px 0px;
 }
 
 .host_right-text {
@@ -421,16 +421,10 @@ ul {
 		width: 100%;
 		justify-content: none;
 	}
-	main {
-		
-	}
 	.container_hosts {
 		justify-content: none;
 	}
 	.container_host-right {
-		
-	}
-	.container_host_left {
 		
 	}
 }
