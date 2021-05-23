@@ -48,19 +48,25 @@ a {
 header {
 	display: flex;
 	margin: auto;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.header-logo {
+	align-self: flex-start;
 }
 header img {
 	padding-top: 50px;
 }
 
+header nav ul {
+	width: 100%;
+}
 header nav li {
 	padding-top: 50px;
-	margin-left: 67px;
+
 }
 header nav li a {
-	padding: 64px 40px 0;
+	padding: 64px 40px 0px 40px;
 	text-decoration: none;
 }
 header nav li a:visited {
@@ -72,11 +78,12 @@ header nav li a:hover {
 }
 .subscribe {
 	padding-top: 67px;
-	margin-left: 67px;
+	align-self: flex-end;
 }
 #subscribe {
 	color: #0065fc;
 	font-weight: bold;
+	
 }
 
 /* CSS search bar */
@@ -92,7 +99,7 @@ h1 + p {
 }
 .container_search {
 	justify-content: space-between;
-	width: 416px;
+	max-width: 416px;
 	height: 50px;
 	border-radius: 18px 18px 18px 18px;
 	border: solid #f2f2f2 2px;
@@ -144,13 +151,13 @@ input::placeholder {
 
 .filters {
 	padding-top: 30px;
-	padding-bottom: 35px;
-	height: 50px;
+	height: 100%;
 	flex-wrap: wrap;
 }
 .filter {
 	align-items: center;
 	margin-right: 20px;
+	margin-bottom: 5px;
 	border: solid #f2f2f2 2px;
 	border-radius: 45px;
 	cursor: pointer;
@@ -188,6 +195,7 @@ input::placeholder {
 .container_information {
 	align-items: center;
 	margin-bottom: 15px;
+	margin-top: 30px;
 }
 .information-icone {
 	justify-content: center;
@@ -312,7 +320,6 @@ input::placeholder {
 }
 .card_right {
 	background-color: white;
-	border-radius: 30px;
 	margin-bottom: 30px;
 	border-radius: 35px;
 	height: 134px;
@@ -393,11 +400,10 @@ input::placeholder {
 
 /* FOOTER */
 
-footer {
-	width: 100%;
-}
+
 .footer {
 	background-color: #f2f2f2;
+	width: 100%;
 }
 .container_footer {
 	max-width: 1340px;
@@ -418,4 +424,113 @@ ul {
 }
 .footer_menu li {
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1285px) {
+
+	/* LES PLUS POPULAIRES */
+	.container_host-right {
+		width: 100%;
+		border-radius: 0px;
+		padding: 30px 30px 30px 30px;
+		margin-bottom: 30px;
+	}
+	.container_img_right {
+		width: 40%;
+	}
+	.card_right-img {
+		width: 100%;
+	}
+	.container_card_text {
+		width: 60%;
+		padding: 20px 20px 20px 20px;
+	}
+	.column_number_one {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.card_right {
+		margin-bottom: 0px;
+		width: 32%;
+	}
+	.host_right-text {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1097px) {
+	.container_host-right {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.card_right {
+		margin-bottom: 0px;
+		width: 32%;
+	}
+	.container_card_text {
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 892px) {
+	.column_number_one {
+		display: flex;
+		flex-direction: column;
+	}
+	.card_right {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 30px;
+	}
+	.container_img_right {
+		height: 100%;
+	}
+	.card_right-img {
+		height: 100%;
+	}
+	.card_star {
+		font-size: 2em;
+		text-align: center;
+	}
+	.card-text {
+		font-size: 1.3em;
+		text-align: center;
+		padding-top: 15px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+
+	/* LES PLUS POPULAIRES */
+	.container_host-right {
+		width: 100%;
+		border-radius: 0px;
+	}
+	.container_img_right {
+		width: 40%;
+	}
+	.card_right {
+		width: 100%;
+		height: 150px;
+		margin-bottom: 30px;
+	}
+	.card_right-img {
+		width: 100%;
+	}
+	.container_card_text {
+		width: 60%;
+		padding: 20px 20px 20px 20px;
+	}
+	.column_number_one {
+		width: 90%;
+	}
+	.card-text {
+		font-size: 1em;
+		text-align: center;
+		padding-top: 15px;
+	}
+	.card_star {
+		font-size: 1em;
+		text-align: center;
+	}
 }
