@@ -54,37 +54,25 @@ header {
 .header-logo {
 	align-self: flex-start;
 }
-header img {
-	padding-top: 50px;
-}
-
-header nav ul {
-	width: 100%;
-}
-header nav li {
-	padding-top: 50px;
+header nav {
 
 }
-header nav li a {
-	padding: 64px 40px 0px 40px;
+header nav a {
+
 	text-decoration: none;
 }
-header nav li a:visited {
+header nav a:visited {
 	color: black;
 }
-header nav li a:hover {
+header nav a:hover {
 	border-top: 2px solid #0065fc;
 	color: #0065fc;
 }
 .subscribe {
-	padding-top: 67px;
-	align-self: flex-end;
-}
-#subscribe {
 	color: #0065fc;
 	font-weight: bold;
-	
 }
+
 
 /* CSS search bar */
 
@@ -501,6 +489,30 @@ ul {
 
 @media screen and (max-width: 580px) {
 
+	/* HEADER */
+	header nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.subscribe {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	.menu_hebergement {
+		width: 50%;
+		text-align: center;
+	}
+	.menu_activities {
+		width: 50%;
+		text-align: center;
+	}
+	header nav a:hover {
+		border-top: none;
+		border-bottom: 2px solid #0065fc;
+		color: #0065fc;
+	}
 	/* LES PLUS POPULAIRES */
 	.container_host-right {
 		width: 100%;
