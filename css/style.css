@@ -50,15 +50,13 @@ header {
 	margin: auto;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-top: 50px;
 }
 .header-logo {
 	align-self: flex-start;
 }
-header nav {
-
-}
 header nav a {
-
+	padding: 48px 25px 0px 25px;
 	text-decoration: none;
 }
 header nav a:visited {
@@ -68,7 +66,7 @@ header nav a:hover {
 	border-top: 2px solid #0065fc;
 	color: #0065fc;
 }
-.subscribe {
+#subscribe {
 	color: #0065fc;
 	font-weight: bold;
 }
@@ -498,19 +496,25 @@ ul {
 	.subscribe {
 		position: absolute;
 		right: 10px;
-		top: 10px;
+		top: 2px;
 	}
 	.menu_hebergement {
 		width: 50%;
+		padding-top: 30px;
+		padding-bottom: 10px;
 		text-align: center;
+		border-bottom: 3px solid #f2f2f2;
 	}
 	.menu_activities {
 		width: 50%;
+		padding-top: 30px;
+		padding-bottom: 10px;
 		text-align: center;
+		border-bottom: 3px solid #f2f2f2;
 	}
 	header nav a:hover {
 		border-top: none;
-		border-bottom: 2px solid #0065fc;
+		border-bottom: 3px solid #0065fc;
 		color: #0065fc;
 	}
 	/* LES PLUS POPULAIRES */
