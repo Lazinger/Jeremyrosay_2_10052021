@@ -198,7 +198,7 @@ input::placeholder {
 	width: 25px;
 	height: 25px;
 	color: #0065fc;
-	font-size: 12px;
+	font-size: 1em;
 }
 .information-text {
 	margin-left: 15px;
@@ -539,6 +539,7 @@ ul {
 		max-width: 580px;
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-bottom: 30px;
 	}
 	.container_search {
 		max-width: 100%;
@@ -565,6 +566,11 @@ ul {
 
 	/* FILTERS */
 
+	/* ZONE INFO */
+	.information-icone {
+		max-width: 25px;
+	}
+
 	/* LES PLUS POPULAIRES */
 	.container_host-right {
 		width: 100%;
@@ -583,18 +589,18 @@ ul {
 	}
 	.container_card_text {
 		width: 60%;
-		padding: 20px 20px 20px 20px;
+		padding: 10px 20px 10px 20px;
 	}
 	.column_number_one {
 		width: 90%;
 	}
 	.card-text {
 		font-size: 1em;
-		text-align: center;
-		padding-top: 15px;
+		text-align: start;
+		padding-top: 0px;
 	}
 	.card_star {
 		font-size: 1em;
-		text-align: center;
+		text-align: start;
 	}
 }
