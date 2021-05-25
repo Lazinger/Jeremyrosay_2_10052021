@@ -437,9 +437,6 @@ MEDIA QUERY ------------------------------------
 @media screen and (max-width: 1285px) {
 
 	/* HEADER */
-	header {
-
-	}
 	/* SEARCH n FILTERS */
 	.container_search_filter {
 		padding-left: 30px;
