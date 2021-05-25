@@ -438,8 +438,7 @@ MEDIA QUERY ------------------------------------
 
 	/* HEADER */
 	header {
-		padding-left: 30px;
-		padding-right: 30px;
+
 	}
 	/* SEARCH n FILTERS */
 	.container_search_filter {
@@ -628,6 +627,54 @@ MEDIA QUERY ------------------------------------
 	}
 }
 
+@media screen and (max-width: 822px) {
+	/* HEBERGEMENT */
+
+	.row_number_one {
+		flex-wrap: wrap;
+		height: 100%;
+	}
+	.row_number_two {
+		flex-wrap: wrap;
+		height: 100%;
+	}
+	.container_host_left {
+		background-color: white;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.container_host_left h2 {
+		margin: 0px;
+		text-align: start;
+		padding-left: 0px;
+	}
+	.row_number_one {
+		padding-top: 25px;
+	}
+	.card_left {
+		width: 100%;
+		height:	300px;
+		box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
+		margin: 0px 0px 15px 0px;
+	}
+	.card_left-img {
+		height: 200px;
+	}
+	.card-text {
+		width: 100%;
+	}
+
+	.container_card_text_host {
+		width: 100%;
+		padding: 0px 15px 0px 15px;
+	}
+	.afficherPlus {
+		padding-left: 0px;
+		font-size: 1.2em;
+		padding-top: 15px;
+	}
+}
+
 @media screen and (max-width: 580px) {
 
 	.container {
@@ -749,9 +796,11 @@ MEDIA QUERY ------------------------------------
 
 	.row_number_one {
 		flex-wrap: wrap;
+
 	}
 	.row_number_two {
 		flex-wrap: wrap;
+
 	}
 	.container_host_left {
 		background-color: white;
@@ -768,8 +817,10 @@ MEDIA QUERY ------------------------------------
 	}
 	.card_left {
 		width: 100%;
+		height: auto;
 		box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 		margin: 0px 0px 15px 0px;
+	
 	}
 	.card-text {
 		width: 100%;
@@ -786,14 +837,18 @@ MEDIA QUERY ------------------------------------
 	}
 
 	/* ACTIVITIES */
+
 	.container_activities {
-		padding-left: 20px;
-		padding-right: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
 		height: 100%;
 	}
 	.container_activities_cards {
 		width: 100%;
 		flex-direction: column;
+	}
+	.container_activities h3 {
+		font-size: 0.9em;
 	}
 	.activities_column {
 		width: 100%;
