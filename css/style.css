@@ -488,6 +488,12 @@ ul {
 @media screen and (max-width: 580px) {
 
 	/* HEADER */
+	header {
+		padding-top: 33px;
+	}
+	.header-logo {
+		padding-left: 18px;
+	}
 	header nav {
 		width: 100%;
 		display: flex;
@@ -495,8 +501,9 @@ ul {
 	}
 	.subscribe {
 		position: absolute;
-		right: 10px;
+		right: 0px;
 		top: 2px;
+		font-size: 1.2em;
 	}
 	.menu_hebergement {
 		width: 50%;
