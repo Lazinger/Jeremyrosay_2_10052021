@@ -94,7 +94,7 @@ h1 + p {
 	justify-content: center;
 	align-items: center;
 	border-radius: 15px 0px 0px 15px;
-	width: 50px;
+	width: 20%;
 	background-color: #f2f2f2;
 }
 .search_button {
@@ -115,8 +115,11 @@ h1 + p {
 	width: 100px;
 }
 #site-search {
-	width: 234px;
+	width: 100%;
 	padding-left: 5px;
+}
+#search_icon {
+	display: none;
 }
 input {
 	border-style: none;
@@ -140,6 +143,9 @@ input::placeholder {
 	height: 100%;
 	flex-wrap: wrap;
 }
+.filters_area {
+	flex-wrap: wrap;
+}
 .filter {
 	align-items: center;
 	margin-right: 20px;
@@ -149,6 +155,7 @@ input::placeholder {
 	cursor: pointer;
 	transition: transform 250ms;
 }
+
 .filter:hover {
 	color: #0065fc;
 	transform: translateY(-10px);
@@ -524,6 +531,40 @@ ul {
 		border-bottom: 3px solid #0065fc;
 		color: #0065fc;
 	}
+	/* SEARCH n FILTERS */
+
+	/* SEARCH */
+
+	.container_search_filter {
+		max-width: 580px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.container_search {
+		max-width: 100%;
+	}
+	input::placeholder {
+		font-size: 1.2em;
+	}
+	.search_button {
+		width: 20%;
+		border-radius: 15px 15px 15px 15px;
+		border-style: none;
+		color: white;
+		background-color: #0065fc;
+		cursor: pointer;
+		padding: 0;
+	}
+	#search_text {
+		display: none;
+	}
+	#search_icon {
+		font-size: 1.3em;
+		display: block;
+	}
+
+	/* FILTERS */
+
 	/* LES PLUS POPULAIRES */
 	.container_host-right {
 		width: 100%;

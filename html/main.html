@@ -34,7 +34,7 @@
 
 		<!-- SECTION RECHERCHE + FILTRES -->
 		<main class="container">
-			<section class="flex_column">
+			<section class="container_search_filter flex_column">
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 
@@ -52,6 +52,7 @@
 					/>
 					<button class="search_button">
 						<span id="search_text">Rechercher</span>
+						<span id="search_icon"><i class="fas fa-search"></i></span>
 					</button>
 				</div>
 				<!-- FILTRES -->
@@ -59,31 +60,33 @@
 					<div class="filter flex_row no-border no-animation">
 						<span class="filter-text">Filtres</span>
 					</div>
-
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-money-bill-wave"></i>
+					<div class="filters_area flex_row">
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-money-bill-wave"></i>
+							</div>
+							<div class="filter-text">Economique</div>
 						</div>
-						<div class="filter-text">Economique</div>
-					</div>
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-child"></i>
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-child"></i>
+							</div>
+							<div class="filter-text">Familial</div>
 						</div>
-						<div class="filter-text">Familial</div>
-					</div>
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-heart"></i>
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-heart"></i>
+							</div>
+							<div class="filter-text">Romantique</div>
 						</div>
-						<div class="filter-text">Romantique</div>
-					</div>
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-dog"></i>
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-dog"></i>
+							</div>
+							<div class="filter-text">Animaux autorisés</div>
 						</div>
-						<div class="filter-text">Animaux autorisés</div>
 					</div>
+					
 				</div>
 				<!-- ZONE INFORMATION -->
 				<div class="container_information flex_row">
