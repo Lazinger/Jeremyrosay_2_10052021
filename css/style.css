@@ -426,6 +426,14 @@ ul {
 	margin-bottom: 10px;
 }
 
+/*----------------------------------------------
+------------------------------------------------
+------------------------------------------------
+MEDIA QUERY ------------------------------------
+------------------------------------------------
+------------------------------------------------
+----------------------------------------------*/ 
+
 @media screen and (max-width: 1285px) {
 
 	/* HEADER */
@@ -472,17 +480,22 @@ ul {
 	.container_host_left {
 		width: 100%;
 		border-radius: 0px;
-		padding: 30px;
+	
 	}
 	.container_host_left h2 {
 		padding-bottom: 20px;
-		padding-left: 0px;
+		padding-left: 20px;
 	}
 	.row_number_one {
 		margin-bottom: 20px;
 	}
 	.row_number_one, .row_number_two {
 		justify-content: space-between;
+	}
+	.afficherPlus {
+		padding-left: 20px;
+		font-size: 1.2em;
+		padding-top: 15px;
 	}
 	/* ACTIVITIES */
 	.container_activities {
@@ -496,6 +509,11 @@ ul {
 		padding-right: 30px;
 	}
 }
+
+
+
+
+
 @media screen and (max-width: 1249px) {
 	/* ACTIVITIES */
 	.container_card_medium {
@@ -506,18 +524,26 @@ ul {
 		flex-direction: row;
 		width: 100%;
 	}
-	.activities_column_number_four .container_card_small_tab, .container_card_medium_tab {
-
+	.container_card_small_tab {
 		height: 95%;
 		width: 49%;
 		margin-top: 20px;
 	}
-	.activities_column_number_four .container_card_small_tab .img_small {
+	.container_card_medium_tab {
+		height: 95%;
+		width: 49%;
+		margin-top: 20px;
+
+	}
+	.container_card_small_tab .img_small {
 		height: 180px;
 	}
 }
-	
-}
+
+
+
+
+
 @media screen and (max-width: 1097px) {
 
 	/* LES PLUS POPULAIRES */
@@ -533,12 +559,55 @@ ul {
 		padding-top: 10px;
 	}
 }
+
+
+
+
+
+@media screen and (max-width: 959px) {
+	/* HEBERGEMENT */
+	.row_number_one {
+		flex-wrap: nowrap;
+	}
+	.row_number_two {
+		flex-wrap: nowrap;
+	}
+	/* ACTIVITIES */
+	.activities_column {
+		width: 30%;
+	}
+	.activities_column_number_four {
+		width: 100%;
+	}
+}
+
+
+
+
 @media screen and (max-width: 892px) {
 	/* HEBERGEMENT */
+	.container_host_left h2 {
+		padding-left: 20px;
+	}
 	.column_number_one {
 		display: flex;
 		flex-direction: column;
 	}
+	.row_number_one {
+		justify-content: space-between;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.row_number_two {
+		justify-content: space-between;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.card_left {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	/* POPULAR */ 
 	.card_right {
 		width: 100%;
 		height: 200px;
@@ -551,11 +620,9 @@ ul {
 		height: 100%;
 	}
 	.card_star {
-		font-size: 2em;
 		text-align: center;
 	}
 	.card-text {
-		font-size: 1.3em;
 		text-align: center;
 		padding-top: 15px;
 	}
@@ -679,6 +746,13 @@ ul {
 	}
 
 	/* HEBERGEMENT */
+
+	.row_number_one {
+		flex-wrap: wrap;
+	}
+	.row_number_two {
+		flex-wrap: wrap;
+	}
 	.container_host_left {
 		background-color: white;
 		margin-left: 20px;
@@ -715,6 +789,7 @@ ul {
 	.container_activities {
 		padding-left: 20px;
 		padding-right: 20px;
+		height: 100%;
 	}
 	.container_activities_cards {
 		width: 100%;
@@ -724,8 +799,27 @@ ul {
 		width: 100%;
 	}
 	.container_card_large, .container_card_medium, .container_card_small{
-		margin-bottom: 22px;
+		margin-bottom: 50px;
+		height: 200px;
 	}
+	.container_card_medium_tab {
+		margin-top: 0px;
+		width: 100%;
+	}
+	.container_card_small_tab {
+		margin-top: 0px;
+		width: 100%;
+	}
+	.container_card_small_tab .img_small {
+		height: 150px;
+	}
+	.img_large, .img_medium, .img_small {
+		height: 150px;
+	}
+	.activities_column_number_four {
+		flex-direction: column;
+	}
+	
 
 	/* FOOTER */
 	.footer {
