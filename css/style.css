@@ -215,7 +215,7 @@ input::placeholder {
 	flex-direction: column;
 	justify-content: space-between;
 }
-/* PARTIE GAUCHE */
+/* PARTIE GAUCHE HEBERGEMENT */
 .row_number_one {
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -253,7 +253,7 @@ input::placeholder {
 	border-radius: 30px 30px 0px 0px;
 	object-fit: cover;
 }
-.container_card_text {
+.container_card_text_host {
 	flex-direction: column;
 	justify-content: space-between;
 	padding-left: 17px;
@@ -282,7 +282,7 @@ input::placeholder {
 	color: black;
 }
 
-/* PARTIE DROITE */
+/* PARTIE DROITE MOST POPULAR*/
 .container_host-right {
 	display: flex;
 	flex-direction: column;
@@ -291,7 +291,13 @@ input::placeholder {
 	background-color: #f2f2f2;
 	border-radius: 30px;
 	width: 30%;
-	padding: 30px 0px 0px 0px;
+	padding-top: 30px;
+}
+.container_card_text_popular {
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 12px;
+	padding-bottom: 10px;
 }
 
 .host_right-text {
@@ -319,12 +325,12 @@ input::placeholder {
 	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 5px;
 }
 .card_right-img {
 	height: 134px;
 	width: 127px;
 	border-radius: 30px 0px 0px 30px;
-	padding-left: 5px;
 	object-fit: cover;
 }
 
@@ -434,7 +440,7 @@ ul {
 	.card_right-img {
 		width: 100%;
 	}
-	.container_card_text {
+	.container_card_text_popular {
 		width: 60%;
 		padding: 20px 20px 20px 20px;
 	}
@@ -453,6 +459,8 @@ ul {
 	}
 }
 @media screen and (max-width: 1097px) {
+
+	/* LES PLUS POPULAIRES */
 	.container_host-right {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -461,11 +469,12 @@ ul {
 		margin-bottom: 0px;
 		width: 32%;
 	}
-	.container_card_text {
+	.container_card_text_popular {
 		padding-top: 10px;
 	}
 }
 @media screen and (max-width: 892px) {
+	/* HEBERGEMENT */
 	.column_number_one {
 		display: flex;
 		flex-direction: column;
@@ -576,29 +585,30 @@ ul {
 		width: 100%;
 		border-radius: 0px;
 		margin-bottom: 0px;
-	}
-	.container_img_right {
-		width: 50%;
+		padding: 10px 15px 10px 15px;
 	}
 	.card_right {
 		width: 100%;
 		height: 150px;
 		margin-bottom: 30px;
+		justify-content: space-between;
+		padding-left: 0px;
 	}
 	.card_right-img {
 		width: 100%;
+		padding-left: 5px;
 	}
-	.container_card_text {
+	.container_card_text_popular {
 		width: 50%;
 		padding: 10px 20px 10px 20px;
 	}
 	.column_number_one {
-		width: 90%;
+		width: 100%;
 	}
 	.card-text {
 		font-size: 1em;
 		text-align: start;
-		padding-top: 10px;
+		padding-top: 0px;
 	}
 	.card_star {
 		font-size: 1em;
@@ -626,15 +636,10 @@ ul {
 	}
 	.card-text {
 		width: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
 	}
-	.card_star {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.container_card_text {
+
+	.container_card_text_host {
 		width: 100%;
-		padding: 0px;
+		padding: 0px 15px 0px 15px;
 	}
 }
