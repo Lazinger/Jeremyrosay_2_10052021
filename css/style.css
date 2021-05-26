@@ -58,6 +58,7 @@ header {
 header nav a {
 	padding: 48px 25px 0px 25px;
 	text-decoration: none;
+	color: black;
 }
 header nav a:visited {
 	color: black;
@@ -296,8 +297,9 @@ input::placeholder {
 .container_card_text_popular {
 	flex-direction: column;
 	justify-content: space-between;
-	padding-left: 12px;
+	padding-left: 10px;
 	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .host_right-text {
