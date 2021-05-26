@@ -22,20 +22,19 @@
 				src="../img/logo/Reservia.svg"
 				alt="Logo site web Reservia"
 			/>
-			<nav class="flex_row">
-				<ul class="flex_row">
-					<li class=""><a href="#hebergement">Hébergements</a></li>
-					<li class=""><a href="#activities">Activités</a></li>
-				</ul>
+			<nav class="">	
+				<a class="menu_hebergement" href="#hebergement">Hébergements</a>
+				<a class="menu_activities" href="#activities">Activités</a>
 				<a class="subscribe" href=""><span id="subscribe">S'inscrire</span></a>
 			</nav>
+			
 		</header>
 
 		<!-- FIN HEADER -->
 
 		<!-- SECTION RECHERCHE + FILTRES -->
 		<main class="container">
-			<section class="flex_column">
+			<section class="container_search_filter flex_column">
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
 
@@ -53,6 +52,7 @@
 					/>
 					<button class="search_button">
 						<span id="search_text">Rechercher</span>
+						<span id="search_icon"><i class="fas fa-search"></i></span>
 					</button>
 				</div>
 				<!-- FILTRES -->
@@ -60,31 +60,33 @@
 					<div class="filter flex_row no-border no-animation">
 						<span class="filter-text">Filtres</span>
 					</div>
-
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-money-bill-wave"></i>
+					<div class="filters_area flex_row">
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-money-bill-wave"></i>
+							</div>
+							<div class="filter-text">Economique</div>
 						</div>
-						<div class="filter-text">Economique</div>
-					</div>
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-child"></i>
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-child"></i>
+							</div>
+							<div class="filter-text">Familial</div>
 						</div>
-						<div class="filter-text">Familial</div>
-					</div>
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-heart"></i>
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-heart"></i>
+							</div>
+							<div class="filter-text">Romantique</div>
 						</div>
-						<div class="filter-text">Romantique</div>
-					</div>
-					<div class="filter flex_row">
-						<div class="filter-icone flex_row">
-							<i class="fas fa-dog"></i>
+						<div class="filter flex_row">
+							<div class="filter-icone flex_row">
+								<i class="fas fa-dog"></i>
+							</div>
+							<div class="filter-text">Animaux autorisés</div>
 						</div>
-						<div class="filter-text">Animaux autorisés</div>
 					</div>
+					
 				</div>
 				<!-- ZONE INFORMATION -->
 				<div class="container_information flex_row">
@@ -98,7 +100,7 @@
 			</section>
 			<!-- SECTION HEBERGEMENT GAUCHE ET DROITE -->
 
-			<!-- SECTION GAUCHE-->
+			<!-- SECTION GAUCHE HOST-->
 			<section id="hebergement" class="container_hosts flex_row">
 				<div class="container_host_left flex_column">
 					<div>
@@ -112,7 +114,7 @@
 								src="../img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 								alt="Image hebergement"
 							/>
-							<div class="container_card_text flex_column">
+							<div class="container_card_text_host flex_column">
 								<div class="card-text flex_column">
 									<h3>Auberge la Cannebière</h3>
 									<p>Nuit à partir de 25€</p>
@@ -132,7 +134,7 @@
 								src="../img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
 								alt="Image hebergement"
 							/>
-							<div class="container_card_text flex_column">
+							<div class="container_card_text_host flex_column">
 								<div class="card-text flex_column">
 									<h3>Hôtel du port</h3>
 									<p>Nuit à partir de 52€</p>
@@ -152,7 +154,7 @@
 								src="../img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
 								alt="Image hebergement"
 							/>
-							<div class="container_card_text flex_column">
+							<div class="container_card_text_host flex_column">
 								<div class="card-text flex_column">
 									<h3>Hôtel les mouettes</h3>
 									<p>Nuit à partir de 76€</p>
@@ -174,7 +176,7 @@
 								src="../img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
 								alt="Image hebergement"
 							/>
-							<div class="container_card_text flex_column">
+							<div class="container_card_text_host flex_column">
 								<div class="card-text flex_column">
 									<h3>Hôtel de la mer</h3>
 									<p>Nuit à partir de 46€</p>
@@ -194,7 +196,7 @@
 								src="../img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
 								alt="Image hebergement"
 							/>
-							<div class="container_card_text flex_column">
+							<div class="container_card_text_host flex_column">
 								<div class="card-text flex_column">
 									<h3>Auberge le panier</h3>
 									<p>Nuit à partir de 23€</p>
@@ -214,7 +216,7 @@
 								src="../img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
 								alt="Image hebergement"
 							/>
-							<div class="container_card_text flex_column">
+							<div class="container_card_text_host flex_column">
 								<div class="card-text flex_column">
 									<h3>Hôtel chez Amina</h3>
 									<p>Nuit à partir de 96€</p>
@@ -239,17 +241,18 @@
 					</div>
 					<div class="column_number_one">
 						<article class="card_right flex_row">
-							<img
-								class="card_right-img"
-								src="../img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-								alt="Image hebergement"
-							/>
-							<div class="container_card_text flex_column">
+							<div class="container_img_right">
+								<img
+									class="card_right-img"
+									src="../img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+									alt="Image hebergement"
+								/>
+							</div>
+
+							<div class="container_card_text_popular flex_column">
 								<div class="card-text flex_column">
-									<div>
-										<h3>Hôtel Le soleil du matin</h3>
-										<p>Nuit à partir de 128€</p>
-									</div>
+									<h3>Hôtel Le soleil du matin</h3>
+									<p>Nuit à partir de 128€</p>
 								</div>
 								<div class="card_star">
 									<i class="fas fa-star fa-sm"></i>
@@ -261,39 +264,41 @@
 							</div>
 						</article>
 						<article class="card_right flex_row">
-							<img
-								class="card_right-img"
-								src="../img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-								alt="Image hebergement"
-							/>
-							<div class="container_card_text flex_column">
+							<div class="container_img_right">
+								<img
+									class="card_right-img"
+									src="../img/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+									alt="Image hebergement"
+								/>
+							</div>
+
+							<div class="container_card_text_popular flex_column">
 								<div class="card-text flex_column">
-									<div>
-										<h3>Au coeur de l'eau Chambres d'hôtes</h3>
-										<p>Nuit à partir de 71€</p>
-									</div>
+									<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+									<p>Nuit à partir de 71€</p>
 								</div>
 								<div class="card_star">
 									<i class="fas fa-star fa-sm"></i>
 									<i class="fas fa-star fa-sm"></i>
 									<i class="fas fa-star fa-sm"></i>
 									<i class="fas fa-star fa-sm"></i>
-									<i class="fas fa-star fa-sm grey"></i>
+									<i class="fas fa-star fa-sm"></i>
 								</div>
 							</div>
 						</article>
 						<article class="card_right flex_row">
-							<img
-								class="card_right-img"
-								src="../img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-								alt="Image hebergement"
-							/>
-							<div class="container_card_text flex_column">
+							<div class="container_img_right">
+								<img
+									class="card_right-img"
+									src="../img/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+									alt="Image hebergement"
+								/>
+							</div>
+
+							<div class="container_card_text_popular flex_column">
 								<div class="card-text flex_column">
-									<div>
-										<h3>Hôtel Tout bleu et Blanc</h3>
-										<p>Nuit à partir de 68€</p>
-									</div>
+									<h3>Hôtel Tout bleu et Blanc</h3>
+									<p>Nuit à partir de 68€</p>
 								</div>
 								<div class="card_star">
 									<i class="fas fa-star fa-sm"></i>
@@ -309,26 +314,27 @@
 			</section>
 			<!-- SECTION ACTIVITE -->
 
-			<section id="activities" class="flex_column">
+			<section id="activities" class="container_activities flex_column">
 				<div>
 					<h2>Activités à Marseille</h2>
 				</div>
 				<div class="flex_row container_activities_cards">
 					<!-- COLUMN 1-->
-					<div class="flex_column container_card_large">
-						<div class="img_large">
-							<img
-								src="../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-								alt="Vue sur le vieux port de Marseille"
-							/>
-						</div>
-						<div class="activities_text">
-							<h3>Vieux port</h3>
+					<div class="activities_column">
+						<div class="flex_column container_card_large">
+							<div class="img_large">
+								<img
+									src="../img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+									alt="Vue sur le vieux port de Marseille"
+								/>
+							</div>
+							<div class="activities_text">
+								<h3>Vieux port</h3>
+							</div>
 						</div>
 					</div>
-
 					<!-- COLUMN 2-->
-					<div class="flex_column containers_card">
+					<div class="flex_column activities_column activities_column_number_two">
 						<div class="container_card_medium">
 							<div class="img_medium">
 								<img
@@ -354,21 +360,22 @@
 					</div>
 
 					<!-- COLUMN 3-->
-					<div class="flex_column container_card_large">
-						<div class="img_large">
-							<img
-								src="../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-								alt="Vue les calanques de Marseille, immense coline rocheuse et boisé"
-							/>
-						</div>
-						<div class="activities_text">
-							<h3>Parc National des Calanques</h3>
+					<div class="activities_column">
+						<div class="flex_column container_card_large">
+							<div class="img_large">
+								<img
+									src="../img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+									alt="Vue les calanques de Marseille, immense coline rocheuse et boisé"
+								/>
+							</div>
+							<div class="activities_text">
+								<h3>Parc National des Calanques</h3>
+							</div>
 						</div>
 					</div>
-
 					<!-- COLUMN 4-->
-					<div class="flex_column containers_card">
-						<div class="flex_column container_card_small">
+					<div class="flex_column activities_column activities_column_number_four">
+						<div class="flex_column container_card_small container_card_small_tab">
 							<div class="img_small">
 								<img
 									src="../img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -379,7 +386,7 @@
 								<h3>Notre-Dame-de-la-Garde</h3>
 							</div>
 						</div>
-						<div class="flex_column container_card_medium">
+						<div class="flex_column container_card_medium container_card_medium_tab">
 							<div class="img_medium">
 								<img
 									src="../img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
@@ -395,6 +402,7 @@
 			</section>
 		</main>
 		<!-- FOOTER -->
+
 		<footer class="footer">
 			<div class="container_footer">
 				<div class="container_footer_menu flex_row">
