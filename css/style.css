@@ -465,7 +465,7 @@ MEDIA QUERY ------------------------------------
 		font-size: 0.9em;
 	}
 }
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	/* HEBERGEMENT + MOST POPULAR*/
 	.container_hosts {
 		flex-wrap: wrap-reverse;
@@ -490,7 +490,7 @@ MEDIA QUERY ------------------------------------
 	}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	/* HEBERGEMENT + MOST POPULAR*/
 	.container_hosts {
 		flex-wrap: wrap-reverse;
@@ -534,14 +534,12 @@ MEDIA QUERY ------------------------------------
 	.activities_text h3 {
 		font-size: 0.85em;
 	}
-
-	
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
 
 	.container {
-		padding-bottom: 25px;
+		margin: 0px;
 	}
 	/* HEADER */
 	header {
@@ -625,7 +623,7 @@ MEDIA QUERY ------------------------------------
 		width: 100%;
 		border-radius: 0px;
 		margin-bottom: 0px;
-		padding: 30px 15px 10px 15px;
+		padding: 0px 20px 10px 20px;
 	}
 	.card_right {
 		width: 100%;
@@ -638,20 +636,25 @@ MEDIA QUERY ------------------------------------
 		width: 100%;
 		padding-left: 5px;
 	}
+	.container_img_right {
+		width: 50%;
+	}
 	.container_card_text_popular {
 		width: 50%;
-		padding: 10px 20px 10px 20px;
+		padding: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	.column_number_one {
 		width: 100%;
 	}
 	.card-text {
-		font-size: 1em;
+		font-size: 1.2em;
 		text-align: start;
 		padding-top: 0px;
 	}
 	.card_star {
-		font-size: 1em;
+		font-size: 0.9em;
 		text-align: start;
 	}
 
@@ -659,16 +662,18 @@ MEDIA QUERY ------------------------------------
 
 	.row_number_one {
 		flex-wrap: wrap;
+		margin-bottom: 0px;
 
 	}
 	.row_number_two {
 		flex-wrap: wrap;
+		margin-bottom: 0px;
 
 	}
 	.container_host_left {
 		background-color: white;
-		margin-left: 20px;
-		margin-right: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	.container_host_left h2 {
 		margin: 0px;
@@ -680,10 +685,12 @@ MEDIA QUERY ------------------------------------
 	}
 	.card_left {
 		width: 100%;
-		height: auto;
+		height: 195px;
 		box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 		margin: 0px 0px 15px 0px;
-	
+	}
+	.card_left-img {
+		height: 60%;
 	}
 	.card-text {
 		width: 100%;
@@ -691,7 +698,8 @@ MEDIA QUERY ------------------------------------
 
 	.container_card_text_host {
 		width: 100%;
-		padding: 0px 15px 0px 15px;
+		height: 40%;
+		padding-left: 20px;
 	}
 	.afficherPlus {
 		padding-left: 0px;
@@ -705,6 +713,7 @@ MEDIA QUERY ------------------------------------
 		margin-left: 20px;
 		margin-right: 20px;
 		height: 100%;
+		padding-bottom: 0px;
 	}
 	.container_activities_cards {
 		width: 100%;
@@ -763,4 +772,8 @@ MEDIA QUERY ------------------------------------
 		font-size: 1em;
 		font-weight: 500;
 	}
+}
+
+@media screen and (max-width: 480px) {
+	
 }
