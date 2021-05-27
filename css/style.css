@@ -47,6 +47,10 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-top: 50px;
+	padding-bottom: 15px;
+}
+header h1 {
+	margin-bottom: 12px;
 }
 .header-logo {
 	align-self: flex-start;
@@ -74,7 +78,6 @@ header nav a:hover {
 h1 {
 	letter-spacing: -1px;
 	margin-bottom: 15px;
-	margin-top: 45px;
 }
 h1 + p {
 	margin-top: 0px;
@@ -145,7 +148,7 @@ input::placeholder {
 }
 .filter {
 	align-items: center;
-	margin-right: 20px;
+	margin-right: 25px;
 	margin-bottom: 5px;
 	border: solid #f2f2f2 2px;
 	border-radius: 45px;
@@ -210,6 +213,12 @@ input::placeholder {
 	flex-direction: column;
 	justify-content: space-between;
 }
+.card-text h3 {
+	font-size: 1em;
+}
+.card-text p {
+	font-size: 0.9em;
+}
 /* PARTIE GAUCHE HEBERGEMENT */
 .row_number_one {
 	    /* justify-content: space-around; */
@@ -220,8 +229,6 @@ input::placeholder {
 .row_number_two {
 	    /* justify-content: space-around; */
 		margin-bottom: 30px;
-
-
 }
 
 .container_host_left {
@@ -229,31 +236,31 @@ input::placeholder {
     border-radius: 30px;
     justify-content: space-between;
     margin-right: 40px;
-    width: 100%%;
-    padding-left: 25px;
+    width: 80%;
+    padding-left: 40px;
+	padding-right: 5px;
 }
 .container_host_left h2 {
 	margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 20px;
     padding-top: 45px;
-    padding-bottom: 30px;
-	font-size: 1.3em;
+    padding-bottom: 27px;
 }
 
 .card_left {
 	background-color: white;
 	border-radius: 30px;
 	padding: 5px;
-	border-radius: 35px;
+	border-radius: 25px;
 	box-shadow: 0px 3px 10px 1px rgb(0 0 0 / 10%);
 	width: 33%;
-	margin-right: 25px;
+	height: 190px;
+	margin-right: 35px;
 }
 .card_left-img {
 	height: 115px;
 	width: 100%;
-	border-radius: 30px 30px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
 	width: 100%;
 }
@@ -271,9 +278,8 @@ input::placeholder {
 .afficherPlus {
 	color: black;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.1em;
 	font-weight: bold;
-	padding-left: 30px;
 	padding-bottom: 30px;
 	
 }
@@ -290,15 +296,12 @@ input::placeholder {
 	flex-direction: column;
 	background-color: #f2f2f2;
 	border-radius: 30px;
-	width: 31%;
 	padding: 0px 37px 0px 37px;
 }
 .container_card_text_popular {
 	flex-direction: column;
 	justify-content: space-between;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	padding: 10px;
 }
 .host_right-text {
 	width: 100%;
@@ -313,7 +316,6 @@ input::placeholder {
     margin-bottom: 0px;
 	padding-top: 45px;
 	padding-bottom: 30px;
-	font-size: 1.3em
 }
 .column_number_one {
 	width: 100%;
@@ -326,15 +328,16 @@ input::placeholder {
 }
 .card_right {
 	background-color: white;
-	border-radius: 35px;
+	border-radius: 25px;
 	height: 134px;
 	padding: 5px 0px 5px 5px;
 	box-shadow: 0px 3px 10px 1px rgb(0 0 0 / 10%);
+	margin-bottom: 30px;
 }
 .card_right-img {
-	height: 134px;
+	height: 100%;
 	width: 127px;
-	border-radius: 30px 0px 0px 30px;
+	border-radius: 20px 0px 0px 20px;
 	object-fit: cover;
 }
 
@@ -406,6 +409,9 @@ input::placeholder {
 	margin-bottom: 15px;
 	font-weight: bold;
 }
+.activities_text h3 {
+	font-size: 1em;
+}
 
 
 /* FOOTER */
@@ -413,21 +419,19 @@ input::placeholder {
 
 .footer {
 	background-color: #f2f2f2;
-	width: 100%;
 	position: absolute;
 	left: 0px;
+	right: 0px;
 }
 .container_footer {
-	max-width: 1340px;
+	max-width: 1440px;
 	margin: auto;
 }
-.container_footer_menu {
-	max-width: 75%;
-	justify-content: space-between;
-}
+
 .footer_menu_content {
 	padding-top: 49px;
 	padding-bottom: 49px;
+	margin-right: auto;
 }
 .footer_menu_content h5 {
 	font-size: 1.1em;
@@ -449,27 +453,42 @@ MEDIA QUERY ------------------------------------
 
 
 
-
-
-@media screen and (max-width: 1097px) {
-
-	/* LES PLUS POPULAIRES */
-	.container_host-right {
-		padding-left: 15px;
-		padding-right: 15px;
+@media screen and (max-width: 1312px) {
+	/* HEBERGEMENT */
+	.card-text h3 {
+		font-size: 0.85em;
 	}
-	.card_right {
-		margin-bottom: 0px;
-		width: 32%;
+	.card-text p {
+		font-size: 0.85em;
 	}
-	.container_card_text_popular {
-		padding-top: 10px;
+	.card_star {
+		font-size: 0.9em;
 	}
 }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	/* HEBERGEMENT + MOST POPULAR*/
+	.container_hosts {
+		flex-wrap: wrap-reverse;
+	}
 
-
-
-
+	/* HEBERGEMENT */
+	.container_host_left {
+		width: 100%;
+		margin-right: 0px;
+	}
+	/* MOST POPULAR */
+	.container_host-right {
+		padding-right: 22px;
+		margin-bottom: 20px;
+	}
+	.column_number_one {
+		display: flex;
+		flex-direction: row;
+	}
+	.card_right {
+		margin-right: 15px;
+	}
+}
 
 @media screen and (max-width: 959px) {
 	/* HEBERGEMENT */
