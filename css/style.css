@@ -4,11 +4,11 @@ html {
 	/*background-color: grey;*/
 }
 body {
-	margin: 0;
-	padding: 0;
+	max-width: 1440px;
+	margin: auto;
 }
 .container {
-	max-width: 1340px;
+	margin: 0px 50px 0px 50px;
 }
 .flex_row {
 	display: flex;
@@ -18,11 +18,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-main {
-	padding-bottom: 60px;
-	margin: auto;
-	max-width: 1340px;
-}
+
 .bold {
 	font-weight: bold;
 }
@@ -207,9 +203,7 @@ input::placeholder {
 
 /* HEBERGEMENT */
 .container_hosts {
-	justify-content: space-between;
-	flex-wrap: wrap-reverse;
-	max-width: 1340px;
+	width: 100%;
 }
 
 .card-text {
@@ -218,35 +212,44 @@ input::placeholder {
 }
 /* PARTIE GAUCHE HEBERGEMENT */
 .row_number_one {
-	justify-content: space-around;
-	flex-wrap: wrap;
+	    /* justify-content: space-around; */
+		margin-bottom: 30px;
+		margin-left: 25px;
+		margin-right: 25px;
 }
 .row_number_two {
-	justify-content: space-around;
-	flex-wrap: wrap;
+	    /* justify-content: space-around; */
+		margin-bottom: 30px;
+		margin-left: 25px;
+		margin-right: 25px;
+
 }
 
 .container_host_left {
 	background-color: #f2f2f2;
 	border-radius: 30px;
-	padding: 30px 0px 30px 0px;
 	justify-content: space-between;
+	max-width: 880px;
+	margin-right: 40px;
 	
 }
 .container_host_left h2 {
 	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-left: 30px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-top: 45px;
+    padding-bottom: 30px;
 }
 
 .card_left {
-	width: 250px;
+	width: 100%;
 	background-color: white;
 	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 0px 20px 0px 20px;
+	padding: 5px;
 	border-radius: 35px;
 	height: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 .card_left-img {
 	height: 115px;
@@ -274,6 +277,7 @@ input::placeholder {
 	font-size: 1rem;
 	font-weight: bold;
 	padding-left: 30px;
+	padding-bottom: 30px;
 	
 }
 .afficherPlus:visited {
@@ -287,12 +291,9 @@ input::placeholder {
 .container_host-right {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
 	background-color: #f2f2f2;
 	border-radius: 30px;
-	width: 30%;
-	padding-top: 30px;
+	max-width: 420px;
 }
 .container_card_text_popular {
 	flex-direction: column;
@@ -301,17 +302,24 @@ input::placeholder {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-
 .host_right-text {
-	width: 80%;
+	width: 100%;
 	justify-content: space-between;
 	align-items: baseline;
 }
 .host_right-text i {
 	font-size: 1.5rem;
+	padding-right: 37px;
 }
 .host_right-text h2 {
 	margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 37px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+.column_number_one {
+	width: 100%;
 }
 .container_cards_right {
 	justify-content: space-between;
@@ -321,13 +329,10 @@ input::placeholder {
 }
 .card_right {
 	background-color: white;
-	margin-bottom: 30px;
 	border-radius: 35px;
 	height: 134px;
-	width: 100%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
+	width: 344px;
+	margin: 0px 37px 32px 37px;
 }
 .card_right-img {
 	height: 134px;
@@ -336,9 +341,7 @@ input::placeholder {
 	object-fit: cover;
 }
 
-.column_number_one {
-	width: 80%;
-}
+
 /* CSS ACTIVITES */
 .img_large {
 	height: 390px;
@@ -350,12 +353,11 @@ input::placeholder {
 	height: 110px;
 }
 .container_activities {
-	max-width: 1340px;
+	padding-bottom: 60px;
 }
 .container_activities_cards {
     height: 100%;
 	width: 100%;
-	justify-content: space-between;
 	flex-wrap: wrap;	
 }
 .container_activities_cards img {
@@ -367,7 +369,19 @@ input::placeholder {
 .activities_column {
 	display: flex;
 	justify-content: space-between;
-	width: 300px;
+	width: 22%;
+}
+.activities_column_number_one {
+	margin-right: 40px;
+}
+.activities_column_number_two {
+	margin-right: 40px;
+}
+.activities_column_number_three {
+	margin-right: 40px;
+}
+.activities_column_number_four {
+	margin-right: 40px;
 }
 .container_card_large {
 	background-color: white;
@@ -405,6 +419,8 @@ input::placeholder {
 .footer {
 	background-color: #f2f2f2;
 	width: 100%;
+	position: absolute;
+	left: 0px;
 }
 .container_footer {
 	max-width: 1340px;
@@ -877,7 +893,7 @@ MEDIA QUERY ------------------------------------
 
 	/* FOOTER */
 	.footer {
-		max-width: 1340px;
+		max-width: 1440px;
 	}
 	.container_footer {
 		padding-left: 20px;
