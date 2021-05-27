@@ -214,55 +214,51 @@ input::placeholder {
 .row_number_one {
 	    /* justify-content: space-around; */
 		margin-bottom: 30px;
-		margin-left: 25px;
-		margin-right: 25px;
+		width: 100%;
+
 }
 .row_number_two {
 	    /* justify-content: space-around; */
 		margin-bottom: 30px;
-		margin-left: 25px;
-		margin-right: 25px;
+
 
 }
 
 .container_host_left {
 	background-color: #f2f2f2;
-	border-radius: 30px;
-	justify-content: space-between;
-	max-width: 880px;
-	margin-right: 40px;
-	
+    border-radius: 30px;
+    justify-content: space-between;
+    margin-right: 40px;
+    width: 100%%;
+    padding-left: 25px;
 }
 .container_host_left h2 {
 	margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 45px;
     padding-bottom: 30px;
+	font-size: 1.3em;
 }
 
 .card_left {
-	width: 100%;
 	background-color: white;
 	border-radius: 30px;
 	padding: 5px;
 	border-radius: 35px;
-	height: 200px;
-	margin-left: 15px;
-	margin-right: 15px;
 	box-shadow: 0px 3px 10px 1px rgb(0 0 0 / 10%);
+	width: 33%;
+	margin-right: 25px;
 }
 .card_left-img {
 	height: 115px;
 	width: 100%;
 	border-radius: 30px 30px 0px 0px;
 	object-fit: cover;
+	width: 100%;
 }
 .container_card_text_host {
-	flex-direction: column;
-	justify-content: space-between;
-	padding-left: 17px;
-	padding-bottom: 10px;
+	padding: 6px 11px 11px 11px;
 }
 
 .card-text p {
@@ -294,7 +290,8 @@ input::placeholder {
 	flex-direction: column;
 	background-color: #f2f2f2;
 	border-radius: 30px;
-	max-width: 420px;
+	width: 31%;
+	padding: 0px 37px 0px 37px;
 }
 .container_card_text_popular {
 	flex-direction: column;
@@ -309,15 +306,14 @@ input::placeholder {
 	align-items: baseline;
 }
 .host_right-text i {
-	font-size: 1.5rem;
-	padding-right: 37px;
+	font-size: 1.3rem;
 }
 .host_right-text h2 {
 	margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 37px;
-    padding-top: 45px;
-    padding-bottom: 30px;
+	padding-top: 45px;
+	padding-bottom: 30px;
+	font-size: 1.3em
 }
 .column_number_one {
 	width: 100%;
@@ -332,8 +328,6 @@ input::placeholder {
 	background-color: white;
 	border-radius: 35px;
 	height: 134px;
-	width: 344px;
-	margin: 0px 37px 32px 37px;
 	padding: 5px 0px 5px 5px;
 	box-shadow: 0px 3px 10px 1px rgb(0 0 0 / 10%);
 }
@@ -360,8 +354,7 @@ input::placeholder {
 }
 .container_activities_cards {
     height: 100%;
-	width: 100%;
-	flex-wrap: wrap;	
+	width: 100%;	
 }
 .container_activities_cards img {
     width: 100%;
@@ -372,7 +365,7 @@ input::placeholder {
 .activities_column {
 	display: flex;
 	justify-content: space-between;
-	width: 22%;
+	width: 23%;
 }
 .activities_column_number_one {
 	margin-right: 40px;
@@ -384,7 +377,6 @@ input::placeholder {
 	margin-right: 40px;
 }
 .activities_column_number_four {
-	margin-right: 40px;
 }
 .container_card_large {
 	background-color: white;
@@ -454,108 +446,6 @@ MEDIA QUERY ------------------------------------
 ------------------------------------------------
 ------------------------------------------------
 ----------------------------------------------*/ 
-
-@media screen and (max-width: 1285px) {
-
-	/* HEADER */
-	/* SEARCH n FILTERS */
-	.container_search_filter {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	/* LES PLUS POPULAIRES */
-	.container_host-right {
-		width: 100%;
-		border-radius: 0px;
-		padding: 30px 30px 30px 30px;
-		margin-bottom: 30px;
-	}
-	.container_img_right {
-		width: 40%;
-	}
-	.card_right-img {
-		width: 100%;
-	}
-	.container_card_text_popular {
-		width: 60%;
-		padding: 20px 20px 20px 20px;
-	}
-	.column_number_one {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.card_right {
-		margin-bottom: 0px;
-		width: 32%;
-	}
-	.host_right-text {
-		width: 100%;
-	}
-	/* HEBERGEMENT */
-	.container_host_left {
-		width: 100%;
-		border-radius: 0px;
-	
-	}
-	.container_host_left h2 {
-		padding-bottom: 20px;
-		padding-left: 20px;
-	}
-	.row_number_one {
-		margin-bottom: 20px;
-	}
-	.row_number_one, .row_number_two {
-		justify-content: space-between;
-	}
-	.afficherPlus {
-		padding-left: 20px;
-		font-size: 1.2em;
-		padding-top: 15px;
-	}
-	/* ACTIVITIES */
-	.container_activities {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-	/* FOOTER */
-	.container_footer_menu {
-		width: 100%;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-}
-
-
-
-
-
-@media screen and (max-width: 1249px) {
-	/* ACTIVITIES */
-	.container_card_medium {
-		width: 100%;
-	}
-
-	.activities_column_number_four {
-		flex-direction: row;
-		width: 100%;
-	}
-	.container_card_small_tab {
-		height: 95%;
-		width: 49%;
-		margin-top: 20px;
-	}
-	.container_card_medium_tab {
-		height: 95%;
-		width: 49%;
-		margin-top: 20px;
-
-	}
-	.container_card_small_tab .img_small {
-		height: 180px;
-	}
-}
 
 
 
