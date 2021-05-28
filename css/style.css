@@ -87,19 +87,19 @@ h1 + p {
 	justify-content: space-between;
 	max-width: 416px;
 	height: 50px;
-	border-radius: 18px 18px 18px 18px;
+	border-radius: 15px 15px 15px 15px;
 	border: solid #f2f2f2 2px;
 }
 .container_search_icone {
 	justify-content: center;
 	align-items: center;
-	border-radius: 15px 0px 0px 15px;
+	border-radius: 10px 0px 0px 10px;
 	width: 20%;
 	background-color: #f2f2f2;
 }
 .search_button {
 	width: 132px;
-	border-radius: 0px 15px 15px 0px;
+	border-radius: 0px 10px 10px 0px;
 	border-style: none;
 	color: white;
 	background-color: #0065fc;
@@ -594,7 +594,7 @@ MEDIA QUERY ------------------------------------
 	}
 	.search_button {
 		width: 20%;
-		border-radius: 15px 15px 15px 15px;
+		border-radius: 10px 10px 10px 10px;
 		border-style: none;
 		color: white;
 		background-color: #0065fc;
