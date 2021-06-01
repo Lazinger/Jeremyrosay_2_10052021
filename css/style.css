@@ -564,6 +564,12 @@ MEDIA QUERY ------------------------------------
 	.card_right {
 		margin-right: 15px;
 	}
+	.card_right-img {
+		width: 300px;
+	}
+	.container_card_text_popular {
+		font-size: 1.5em;
+	}
 	/* ACTIVITIES */
 	.activities_text h3 {
 		font-size: 0.85em;
@@ -678,6 +684,7 @@ MEDIA QUERY ------------------------------------
 		padding: 10px;
 		margin-left: 20px;
 		margin-right: 20px;
+		font-size: 1em;
 	}
 	.column_number_one {
 		width: 100%;
@@ -809,5 +816,7 @@ MEDIA QUERY ------------------------------------
 }
 
 @media screen and (max-width: 480px) {
-	
-}
+	/* POPULAR */
+	.container_card_text_popular {
+		font-size: 1em;
+	}
