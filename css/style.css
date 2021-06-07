@@ -469,6 +469,9 @@ input::placeholder {
 ul {
 	padding-left: 0px;
 }
+.footer_menu a {
+	color: black;
+}
 .footer_menu li {
 	margin-bottom: 10px;
 }
